@@ -1,2 +1,22 @@
 Source URL : https://malware.news/t/monitoring-for-windows-event-logs-and-the-untold-story-of-proper-elk-integration/16816
 
+Open Event Viewer in Windows and Check logs are generating.
+
+◻️ Group Policy Editor
+Go to Computer configuration 
+           ↳ Security Settings 
+                ↳    Local Policy 
+                     ↳  Audit Policy 
+     | Enable account Logon On | Account Management |  Logon Events | Process tracking | System Events | (Success And Failure )
+    
+OPEN MMC using run 
+  Local Computer Policy -> Computer Configuration -> Windows Settings -> Security Settings -> Adv Audit Policy Config -> Syetem Audit Policy
+    Enable Deatiled Tracking 
+    
+   Local Computer Policy -> Computer Configuration -> Windows Settings -> Security Settings ->Local Policy Security Options -> Security Options 
+   Enable Force Audit Policy Subcat Settings 
+   
+   Local Computer Policy -> Computer Configuration ->Administrative Templates -> System -> Audit Process Creation
+   Enable Include Cmd Line Process Creation 
+   
+  
